@@ -1,0 +1,35 @@
+{
+    "@type": "MessageCard",
+    "@context": "http://schema.org/extensions",
+    "themeColor": "ff0000",
+    "summary": "Pipeline Failed",
+    "title": "Pipeline Failed",
+    "sections": [
+        {
+            "activityTitle": "❌ Build failed",
+            "activitySubtitle": "<REPOSITORY>",
+            "facts": [
+                {
+                    "name": "Repository",
+                    "value": "<REPOSITORY>"
+                },
+                {
+                    "name": "Branch",
+                    "value": "<BRANCH>"
+                }
+            ]
+        }
+    ],
+    "potentialAction": [
+        {
+            "@type": "OpenUri",
+            "name": "View in GitHub",
+            "targets": [
+                {
+                    "os": "default",
+                    "uri": "<ACTION_URL>"
+                }
+            ]
+        }
+    ]
+}

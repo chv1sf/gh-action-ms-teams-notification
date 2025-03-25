@@ -1,0 +1,35 @@
+{
+    "@type": "MessageCard",
+    "@context": "http://schema.org/extensions",
+    "themeColor": "00ff00",
+    "summary": "Pipeline Success",
+    "title": "Pipeline Success",
+    "sections": [
+        {
+            "activityTitle": "✅ Build succeeded",
+            "activitySubtitle": "<REPOSITORY>",
+            "facts": [
+                {
+                    "name": "Repository",
+                    "value": "<REPOSITORY>"
+                },
+                {
+                    "name": "Branch",
+                    "value": "<BRANCH>"
+                }
+            ]
+        }
+    ],
+    "potentialAction": [
+        {
+            "@type": "OpenUri",
+            "name": "View in GitHub",
+            "targets": [
+                {
+                    "os": "default",
+                    "uri": "<ACTION_URL>"
+                }
+            ]
+        }
+    ]
+}
